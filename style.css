@@ -1,0 +1,211 @@
+/* universal selector */
+/* *{
+    color: rgba(216, 216, 249, 0.185);
+} */
+
+
+
+/* element selector */
+/* p{
+    background-color: rgba(174, 216, 216, 0.386);
+} */
+
+
+ /* attribute selector */
+/* input[type="text"]{
+    color: aliceblue;
+} */
+
+/* class selector */
+/* .gym{
+  border: 1px solid salmon ;
+} */
+
+
+/* id selector */
+/* #gyms{
+ color: aqua;
+} */
+
+
+/* multiple  */
+/* p,h2{
+    background-color: rgba(174, 216, 216, 0.386); 
+} */
+
+/* pseudo elements
+li::after{
+means after each list element
+} */
+
+
+/* color 
+h1{
+color:#ffffff;
+border:white;
+color:rgb(0,255,255);
+color:rgba(0,255,255,0.5); for transperancy
+color:hsl()   for hue, saturation ligthness (0 to 100%)range
+color:hsl()   for hue, saturation ligthness alpha 
+}*/
+
+
+ /* background properties  also has shorthand property
+body{
+background-color:azure;
+background-image: none;
+background-position: center; 
+background-size: contain; auto, cover ,100%
+background-repeat:repeat-x ; repeat y ,no repeat
+background-attachment:fixed;
+} */
+
+/* border properties ,it also has shortand property
+p{
+    border-style: double;
+    border-radius: 5px;
+    border-color: bisque;
+    border-width: 20px;
+    border-width: 5px 2px 3px 5px;
+    border-color: antiquewhite orange;
+    border-bottom: 5px solid blue;
+} */
+
+
+
+/* Box Model in CSS 
+
+margin->border->padding->content with height width of content*/
+/* h4{
+    height: 200px;
+    width: 200px;
+    border: 5px solid;
+    padding-left: 20px;
+    margin-top: 10px;
+} */
+
+
+/* text properties */
+/* p{
+    color: brown;
+    text-align: center; left ,right ,justify
+    text-decoration:none ;
+    direction:rtl;
+    text-direction-line:overline;
+    text-decoration-style:dotted;
+    text-decoration-thickness:5px;
+    text-transform:capitalize; lowercase
+    text-indent:20px;
+    letter-spacing:3px;
+    word-spacing:30px;
+    text-shadow:2px 2px 5px orange; 2px 2px overlap 5px gives blur effect
+
+} */
+
+/* font  
+p{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+    font-style: italic;
+ } */
+
+
+
+/* links
+a:visited{
+color: aqua;
+}
+a:active{
+text-decoration: none;
+}
+a:hover{
+color: blueviolet;
+} */
+
+
+/* display property */
+/* p{
+    display:block;
+    display: inline;
+    display: none;  content gets removed from website
+    visibility: hidden ; its there in website but not visible
+
+} */
+
+/* positions
+ h1{
+ 
+    position: relative; top and left works
+    position: static; does nothing top and left wont work
+    position: fixed; container gets fixed at same place even if we scroll
+    position: absolute; both container will getrelative to each other and 1 container contains another ,absolute will overlapif you dontuse relative with it and also look for overflow
+    overflow:scroll;
+    position: sticky; it will initally scroll and then get fixed at top or left etc whatever you give
+} */
+
+/* overflow */
+/* h1{
+    overflow: auto;//scrollbar will appear if necessary
+    overflow: hidden;
+    overflow:scroll;//scrollbar will appear anyway
+    overflow:visible;//by default
+} */
+
+/* float */
+/* .box{
+    float:left;//it will appear on top left and text will get shifted
+} */
+
+
+/* flexbox */
+/* .container1{
+display: flex; //all box appear in one line side by side horizontally
+flex-direction: coloumn;//all box appear side by side vertically
+justify-content: left;//all box shift :left
+justify-content:space-between;
+align-items:flex-start;//this align will work  in row wise manner ie vertically
+flex-wrap:wrap; /it we have many boxes in 1 line so it will not follow height width so we use wrap so that it occupy proper space as given,if height width not given it will automatically adjust according to screen size
+}
+.box1{
+order: 1;//moves this item to end of container
+flex-grow: 2;//it will grow  horizantally with 2x size as we change screen size
+}
+.box2{
+flex-basis: 20px;//jo gien width hai uspai new width apply karna
+} */
+
+
+/* media query */
+/* @media screen(max-width:720px){
+    h1{
+        flex-direction:column;
+    }
+} */
+
+
+/* box sizzing */
+/* .box1{
+    box-sizing:content-box; box size bada hogya box k outside hi padding margin lga
+    box-sizing: border-box; box k andar hi padding aur border mai divide hoga 
+} */
+
+
+/* transform */
+/* div{
+  transform: rotate(30deg); 
+  transform: rotate(-30deg);
+  transform: scale(0.5,0.5);//orignal height and width will get half
+  transform: translate(20px,50px);//it will shift down
+  transform: scaleX()//width will change and for Y height will change
+  transform: skew(20deg,20deg)//gives 3d look from x and y axis
+} */
+
+/* grid layout */
+/* .box{
+    display:grid;
+    grid-template-columns: 150px 150px 150px ;//we will get 3 column
+    gap:10px;
+    grid-row-start:4;
+    grid-column:4;
+} */

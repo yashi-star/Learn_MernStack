@@ -1,0 +1,168 @@
+ <!DOCTYPE html> <!--its html5 document type-->
+<html lang="en">
+<head>
+    <!-- head store meta data tags , meta data is data about data -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link  href="style.css" rel="stylesheet">
+    <title>Document</title>
+
+    <!-- internal css -->
+     <style>
+        h1{
+            color: blueviolet;
+        }
+     </style>
+</head>
+<body>
+    <!-- div is basically a container,you can also have nested div -->
+    <div>
+    <!-- paragraph tag which is block element its a closing tag -->
+    <p>My cat is very grumpy</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adisicing elit.
+        <!-- it will draw a horizontal line so it does not have content in between thats why it has np closing tag -->
+        <hr>
+         Dicta, officia repellat pariatur corporis totam, debitis 
+         obcaecati illo molestias dignissimos dolore fuga illum perferendis
+         <!-- ibr tag break the line its and empty tag  -->
+         <br>amet quae dolores doloribus repellendus praesentium laudantium?</p>
+
+  
+    <!-- heading tag from 1 to 6 descding order -->
+     <h1>h</h1>
+     <h2>e</h2>
+     <h3>l</h3>
+     <h5>l</h5>
+     <h6>o</h6>
+
+           <!-- pre generates pre formatted text which gives spaces accordingly-->
+           <pre>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Omnis aliquam est delectus earum, a totam numquam, similique 
+            quasi odit quidem libero natus. Obcaecati voluptatibus minima
+             enim qui explicabo incidunt aliquid!</pre>
+     
+             <!-- text formatting like b,i,strong ,em,u ,mark-->
+             <P>OKAY WE SEE TEXT FORMATING TAGS
+             <b>bold</b>
+              <i>italics</i>
+              <!-- it shows text importance its smilar to bold  -->
+              <strong>Very strong</strong>
+              <!-- em is siilar to italics but emphasizes text -->
+            <em>Emphasized</em>
+            <!-- mark is used to hightlight text -->
+             <mark>this is marked</mark>
+            <u>Underline the text</u>
+            H<sub>2</sub>O
+            <br>
+           (a+b)<sup>2</sup>
+            THIS IS ALL THAT WE SEE HERE</P>
+            <!-- image with source its a selfclosing tag we can give attribute as width/height and alternate text -->
+            <img src="text.jpg" width="300" alt="text">
+                <!-- for best picture view in changing the size of screen-->
+                 <picture>
+                    <source media="(min-width:650px) " srcset=:"">
+                    <img src="text.jpg" width="300" alt="text">
+                 </picture>
+            <!-- anchor tag  which has a url(absolute url-jismai pura link hai), we have a attribute target which tells where page will open by default its self -->
+            <a href="https://www.google.com"  target="_blank" title="google">google</a>
+            <!--relative url -local url -->
+            <a href="index.js" >relative</a>
+
+             </div>
+                <!-- style is an inline style css -->
+             <div style="background-color: aquamarine;">this is div tag
+                <!-- class is used in group of things using . -->
+                <h4 class="gym">class1 hello</h4>
+                <h4 class="gym">class2 hello</h4>
+                <h4 class="gym">class3 hello</h4>
+
+                <!-- id is used for 1 unique particular thing  using # -->
+                <h4 id="gymss">class4 hello</h4>
+            </div>
+
+            <blockquote cite="https://de.wikipedia.org/wiki/Wikipedia:Hauptseite">Die Kathedrale von Burgos (spanisch Catedral de Burgos) ist eine gotische Kathedrale in Burgos (Spanien) und die Bischofs­kirche des Erz­bistums Burgos. Sie ist der Jung­frau Maria geweiht und berühmt für ihre Größe und Archi­tektur. Seit 1984 ist sie UNESCO-Weltkultur­erbe. Die Kathedrale von Burgos ist äußer­lich durch die reich deko­rierten Turm­konstruktionen der Fassade und der Vierung gekenn­zeichnet. Der gesamte Bau ist im oberen Teil über­reich mit Fialen versehen, sodass sich der Ein­druck eines sperrigen Zucker­bäcker­stils ergeben kann. Die Kirche hat einen kreuz­förmigen Grund­riss und besteht aus Lang­haus, Quer­haus, zwei Seiten­schiffen, Chor­umgang und fünf­zehn Kapellen. Durch den tiefen Altar­raum liegt das Quer­haus mittig; wie in vielen spanischen Kathe­dralen teilt der Chor das Mittel­schiff. Die Gesamt­länge der Kathedrale beträgt 106 Meter, sie ist am Haupt­schiff 26 Meter und am Quer­</blockquote>
+            <q>this is in quote</q>
+            <abbr title="hyper text markup language">this is abbreviation of html</abbr>
+
+
+            <!-- semantic tags  -->
+             <header>header part</header>
+             <nav>for nav bar</nav>
+             <aside>for sidebars we use aside carry link or ads </aside>
+             <article>article tag  for blog ,news etc</article>
+             <main>main content of site</main>
+             <section>divide into small section</section>
+             <footer>footer part</footer>
+           
+           
+           <!-- list-ordered-ol,unordered-ul,descriptive-dl,list item-li -->
+           <ul style="list-style-type: disc;">
+            <li>u</li>
+            <li>n</li>
+            <li>o</li>
+            <li>r</li>
+            <li>d</li>
+           </ul>
+           <ol type="a" start="20">
+            <li>o</li>
+            <li>r</li>
+            <li>d</li>
+            <li>e</li>
+            <li>r</li>
+           </ol>
+
+           <dl>
+            <dt>data term  </dt>
+                <dd>cartoon char data desrip</dd>
+            <dt>data term  </dt>
+                <dd>cartoon char data desrip</dd>
+           </dl>
+
+           <!-- tables -->
+            <table>
+                <caption>caption</caption>
+                <tr>
+                    <th>heading1</th>
+                    <td>data1</td>
+                    <td>data2</td>
+                </tr>
+                <tr>
+                    <th>heading2</th>
+                    <td>data3</td>
+                    <td>data4</td>
+                </tr>
+            </table>
+
+
+            <!-- html forms -->
+             <form action="index.html">
+                <label for="fname">Firstname</label>
+                <input type="text" value="john" id="fname" name="fname" >
+                <label for="opt">html</label>
+                <input type="radio"  name="opt" id="opt" >
+                <label for="opt">css</label>
+                <input type="radio" name="opt" id="opt">
+                <label for="opt">js</label>
+                <input type="radio"  name="opt" id="opt" >
+                <label for="option">ch</label>
+                <input type="checkbox"  name="option" >
+                <label for="option">choo</label>
+                <input type="checkbox"  name="option" >
+                <label for="option">choose</label>
+                <input type="checkbox"  name="option" >
+
+                <select>
+                    <option value="y">y</option>
+                    <option value="e">e</option>
+                    <option value="s">s</option>
+                </select>
+                <button type="submit">submit</button>
+             </form>
+
+
+
+            <script src="index.js"></script>
+            </body>
+
+
+</html>
